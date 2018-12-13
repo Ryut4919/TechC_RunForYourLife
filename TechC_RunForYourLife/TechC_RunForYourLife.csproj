@@ -53,6 +53,9 @@
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
@@ -77,6 +80,9 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -85,8 +91,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MainScene\Script\CameraFollow.cs" />
     <Compile Include="Assets\MainScene\Script\Character\CharacterControl.cs" />
+    <Compile Include="Assets\MainScene\Script\Character\CharacterLook.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MainScene\Model\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />

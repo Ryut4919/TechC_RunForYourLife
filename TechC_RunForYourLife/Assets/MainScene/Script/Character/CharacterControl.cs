@@ -23,10 +23,11 @@ public class CharacterControl : MonoBehaviour {
         if (Direction.sqrMagnitude > 0f)
         {
             Vector3 des = transform.position + Direction.normalized * MoveSpeed;
-            Quaternion Roll = Quaternion.LookRotation(des - transform.position, Vector3.up);
+            //Quaternion Roll = Quaternion.LookRotation(des - transform.position, Vector3.up);
 
             transform.position = des;
-            transform.rotation = Roll;
+            //transform.rotation = Roll;
+
 
             _animator.SetBool("Run", true);
         }
