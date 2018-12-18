@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterLook : MonoBehaviour {
     [SerializeField] private string mouseXInputName, mouseYInputName;
+    //マウスの移動速度
     [SerializeField] private float mouseSensitivity;
     [SerializeField] Transform playerBody;
 
@@ -12,15 +13,18 @@ public class CharacterLook : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         LockCursor();
+        XClamp = 0.0f;
     }
 
     void LockCursor()
     {
+        //マウスを隠す
         Cursor.lockState = CursorLockMode.Locked;
     }
     // Update is called once per frame
     void Update ()
     {
+        //カメラの回転
         CameraRotation();
     }
 
@@ -31,19 +35,23 @@ public class CharacterLook : MonoBehaviour {
 
         XClamp += mouseY;
 
-        if (XClamp > 80.0f)
+        if (XClamp > 90.0f)
         {
-            XClamp = 80.0f;
+            //上向きの最大範囲
+            XClamp = 90.0f;
             mouseY = 0.0f;
             XAxisRotationToValue(270.0f);
         }
-        else if (XClamp < -50.0f)
+        else if (XClamp < -90.0f)
         {
-            XClamp = -50.0f;
+            //下向きの最大範囲
+            XClamp = -90.0f;
             mouseY = 0.0f;
             XAxisRotationToValue(90.0f);
         }
+        //カメラの回転
         transform.Rotate(Vector3.left * mouseY);
+        //プレイヤーの回転
         playerBody.Rotate(Vector3.up, mouseX);
     }
 
