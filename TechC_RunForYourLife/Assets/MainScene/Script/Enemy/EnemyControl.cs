@@ -29,7 +29,7 @@ public class EnemyControl : MonoBehaviour {
         _animator = GetComponent<Animator>();
         StartPos = transform.position;
         WalkController =false;
-        _enemyStatus = EnemyStatus.Walk;
+       // _enemyStatus = EnemyStatus.Walk;
     }
 	
 	// Update is called once per frame
@@ -108,7 +108,7 @@ public class EnemyControl : MonoBehaviour {
     private void Wait()
     {
         WalkController = !WalkController;
-        agent.speed = 0f;
+        agent.speed = 1f;
         _animator.SetBool("Run", false);
         new WaitForSeconds(60.0f);
         _enemyStatus = EnemyStatus.Walk;
