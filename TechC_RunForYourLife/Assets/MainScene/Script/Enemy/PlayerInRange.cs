@@ -5,13 +5,30 @@ using UnityEngine;
 public class PlayerInRange : MonoBehaviour {
     [SerializeField]
     private EnemyControl parent;
+
+    [SerializeField]
+    private bool FindUse;
+    [SerializeField]
+    private bool CaughtUse;
 	// Use this for initialization
 	
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (FindUse)
         {
-            parent._enemyStatus = EnemyControl.EnemyStatus.FindPlayer;
+            if (other.tag == "Player")
+            {
+                parent._enemyStatus = EnemyControl.EnemyStatus.GoCaughtPlayer;
+            }
         }
+        if (CaughtUse)
+        {
+            if (other.tag == "Player")
+            {
+                //   parent._enemyStatus = EnemyControl.EnemyStatus.FindPlayer;
+                Debug.Log("GoddGameWillPlay");
+            }
+        }
+        
     }
 }

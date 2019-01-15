@@ -4,22 +4,36 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyControl : MonoBehaviour {
+    
+    //往復ポイント1
     [SerializeField]
     Transform WalkTo1;
+    ////往復ポイント2
     [SerializeField]
     Transform WalkTo2;
-    
+
+    //プレーヤーを探す時のコライダー
+    [SerializeField]
+    GameObject FindPlayerUse;
+
+    //プレーヤーを追い詰める時のコライダー
+    [SerializeField]
+    GameObject CaughtPlayerUse;
+
+    //プレーヤーを取得
     GameObject Player;
+    
     NavMeshAgent agent;
     Animator _animator;
+    //最初の場所を取得
     Vector3 StartPos;
 
     bool WalkController;
     bool ReachWalk1;
     bool ReachWalk2;
+    bool CaughtPlayer;
 
-    bool FindPlayer;
-
+    //今の状態
     public EnemyStatus _enemyStatus;
 
 	// Use this for initialization
@@ -37,37 +51,46 @@ public class EnemyControl : MonoBehaviour {
     {
         switch (_enemyStatus)
         {
-            case EnemyStatus.StandBy:
+            case EnemyStatus.StandBy://そのまま立つ
                 break;
-            case EnemyStatus.Walk:
+            
+            case EnemyStatus.Walk://往復移動する
                 if (ReachWalk1)
                 {
+                    //移動先を変更
                     agent.destination = WalkTo1.position;
                 }
                 else if (ReachWalk2)
                 {
+                    //移動先を変更
                     agent.destination = WalkTo2.position;
                 }
                 WalkTo();
                 break;
-            case EnemyStatus.Wait:
+            case EnemyStatus.Wait://少しい待ちます
                 Wait();
                 break;
-            case EnemyStatus.FindPlayer:
+            case EnemyStatus.GoCaughtPlayer://プレーヤーを追い
                 Find();
                 break;
-            case EnemyStatus.GoBack:
+            case EnemyStatus.GoBack://最初の場所へ戻す
                 GoBack();
                 break;
         }
-        if (FindPlayer)
+        if (CaughtPlayer)
         {
             WalkController = false;
             ReachWalk1 = false;
             ReachWalk2 = false;
+
+            FindPlayerUse.SetActive(false);
+            CaughtPlayerUse.SetActive(true);
+
         }
-        else if (!FindPlayer)
+        else if (!CaughtPlayer)
         {
+            FindPlayerUse.SetActive(true);
+            CaughtPlayerUse.SetActive(false);
             if (WalkController)
             {
                 ReachWalk1 = true;
@@ -86,6 +109,7 @@ public class EnemyControl : MonoBehaviour {
 
     private void WalkTo()
     {
+        //移動スピード
         agent.speed = 1.5f;
         _animator.SetBool("Run", true);
         if (ReachWalk1)
@@ -116,8 +140,10 @@ public class EnemyControl : MonoBehaviour {
 
     private void Find()
     {
-        FindPlayer = true;
+
+        CaughtPlayer = true;
         agent.speed = 3.5f;
+        //移動先をプレーヤーのところに変更
         agent.destination = Player.transform.position;
         _animator.SetBool("Run", true);
     }
@@ -125,11 +151,13 @@ public class EnemyControl : MonoBehaviour {
     private void GoBack()
     {
         agent.speed = 2.5f;
+        //移動先を最初の場所へ変更
         agent.destination = StartPos;
         _animator.SetBool("Run", true);
+        CaughtPlayer = false;
+
         if (transform.position.x == StartPos.x)
         {
-            FindPlayer = false;
             WalkController = true;
             _enemyStatus = EnemyStatus.Walk;
         }
@@ -145,7 +173,7 @@ public class EnemyControl : MonoBehaviour {
         StandBy,
         Walk,
         Wait,
-        FindPlayer,
+        GoCaughtPlayer,
         GoBack
     }
 }
