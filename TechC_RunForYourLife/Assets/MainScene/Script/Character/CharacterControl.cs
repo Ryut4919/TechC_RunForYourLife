@@ -8,17 +8,22 @@ public class CharacterControl : MonoBehaviour {
     private Animator _animator;
     private CharacterController _charController;
 
+   
+
 	// Use this for initialization
 	void Start () {
         _animator = this.GetComponent <Animator>();
         _charController = GetComponent<CharacterController>();
+       
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
         Playermove();
-	}
+    }
+
+
 
     void Playermove()
     {

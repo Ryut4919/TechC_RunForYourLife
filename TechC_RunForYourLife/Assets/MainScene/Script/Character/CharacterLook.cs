@@ -9,11 +9,13 @@ public class CharacterLook : MonoBehaviour {
     [SerializeField] Transform playerBody;
 
     private float XClamp;
-    
+    private bool StopCameraFollow;
+
     // Use this for initialization
     void Awake () {
         LockCursor();
         XClamp = 0.0f;
+        StopCameraFollow = false;
     }
 
     void LockCursor()
@@ -24,8 +26,18 @@ public class CharacterLook : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        //カメラの回転
-        CameraRotation();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            StopCameraFollow = !StopCameraFollow;
+        }
+
+        if (!StopCameraFollow)
+        {
+            //カメラの回転
+            CameraRotation();
+        }
+        
     }
 
     void CameraRotation()

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerInRange : MonoBehaviour {
     [SerializeField]
     private EnemyControl parent;
+    [SerializeField]
+    Manager _gameManager;
 
     [SerializeField]
     private bool FindUse;
@@ -26,7 +28,8 @@ public class PlayerInRange : MonoBehaviour {
             if (other.tag == "Player")
             {
                 //   parent._enemyStatus = EnemyControl.EnemyStatus.FindPlayer;
-                Debug.Log("GoddGameWillPlay");
+                _gameManager.GameFinish = true;
+                Debug.Log("GoodGameWillPlay");
             }
         }
         

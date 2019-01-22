@@ -92,6 +92,8 @@
     <Compile Include="Assets\MainScene\Script\Character\CharacterLook.cs" />
     <Compile Include="Assets\MainScene\Script\Enemy\EnemyControl.cs" />
     <Compile Include="Assets\MainScene\Script\Enemy\PlayerInRange.cs" />
+    <Compile Include="Assets\MainScene\Script\HideTrigger.cs" />
+    <Compile Include="Assets\MainScene\Script\Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\MainScene\Model\Optimize SDKohaku-Chanz\Readme_Optimize_SD Kohaku-Chanz.txt" />

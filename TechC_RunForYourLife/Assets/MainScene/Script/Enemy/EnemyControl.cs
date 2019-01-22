@@ -52,8 +52,8 @@ public class EnemyControl : MonoBehaviour {
         switch (_enemyStatus)
         {
             case EnemyStatus.StandBy://そのまま立つ
+
                 break;
-            
             case EnemyStatus.Walk://往復移動する
                 if (ReachWalk1)
                 {
@@ -75,6 +75,9 @@ public class EnemyControl : MonoBehaviour {
                 break;
             case EnemyStatus.GoBack://最初の場所へ戻す
                 GoBack();
+                break;
+            case EnemyStatus.GameFinish:
+                StopMove();
                 break;
         }
         if (CaughtPlayer)
@@ -103,14 +106,19 @@ public class EnemyControl : MonoBehaviour {
             }
         }
         
+    }
 
-
+    private void StopMove()
+    {
+        _animator.SetBool("Run", false);
+        agent.speed = 0.0f;
+        
     }
 
     private void WalkTo()
     {
         //移動スピード
-        agent.speed = 1.5f;
+        agent.speed = 2.5f;
         _animator.SetBool("Run", true);
         if (ReachWalk1)
         {
@@ -142,7 +150,7 @@ public class EnemyControl : MonoBehaviour {
     {
 
         CaughtPlayer = true;
-        agent.speed = 3.5f;
+        agent.speed = 4.5f;
         //移動先をプレーヤーのところに変更
         agent.destination = Player.transform.position;
         _animator.SetBool("Run", true);
@@ -150,7 +158,7 @@ public class EnemyControl : MonoBehaviour {
 
     private void GoBack()
     {
-        agent.speed = 2.5f;
+        agent.speed = 3.5f;
         //移動先を最初の場所へ変更
         agent.destination = StartPos;
         _animator.SetBool("Run", true);
@@ -174,6 +182,7 @@ public class EnemyControl : MonoBehaviour {
         Walk,
         Wait,
         GoCaughtPlayer,
-        GoBack
+        GoBack,
+        GameFinish
     }
 }
