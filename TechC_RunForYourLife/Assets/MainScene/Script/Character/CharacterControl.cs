@@ -8,7 +8,8 @@ public class CharacterControl : MonoBehaviour {
     private Animator _animator;
     private CharacterController _charController;
 
-   
+    [SerializeField]
+    private Manager _manager;
 
 	// Use this for initialization
 	void Start () {
@@ -45,8 +46,14 @@ public class CharacterControl : MonoBehaviour {
         {
             _animator.SetBool("Run", false);
         }
+    }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "ClearZone")
+        {
+            _manager.GameClear = true;
+        }
     }
 
     void OnCallChangeFace()

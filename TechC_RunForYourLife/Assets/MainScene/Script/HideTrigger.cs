@@ -18,6 +18,10 @@ public class HideTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        _enemyControl._enemyStatus = EnemyControl.EnemyStatus.GoCaughtPlayer;
+        if (other.tag == "Player")
+        {
+            _enemyControl._enemyStatus = EnemyControl.EnemyStatus.GoCaughtPlayer;
+        }
+        
     }
 }

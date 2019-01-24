@@ -30,12 +30,16 @@ public class CharacterLook : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             StopCameraFollow = !StopCameraFollow;
+            Cursor.visible = true;
+
         }
 
+        
         if (!StopCameraFollow)
         {
             //カメラの回転
             CameraRotation();
+            Cursor.visible = false;
         }
         
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
 
 public class Manager : MonoBehaviour {
 
@@ -10,6 +11,11 @@ public class Manager : MonoBehaviour {
     private GameObject Enemy2;
     [SerializeField]
     private GameObject Enemy3;
+
+    [SerializeField]
+    private string FScene;
+    [SerializeField]
+    private string CScene;
 
     public bool GameFinish = false;
     public bool GameClear = false;
@@ -25,6 +31,14 @@ public class Manager : MonoBehaviour {
         if (GameFinish||GameClear)
         {
             GameF();
+            if (GameFinish)
+            {
+                EditorSceneManager.LoadScene(FScene);
+            }
+            else if (GameClear)
+            {
+                EditorSceneManager.LoadScene(CScene); 
+            }
         }
     }
 

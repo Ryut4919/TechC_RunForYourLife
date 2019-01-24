@@ -80,6 +80,9 @@
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -88,6 +91,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MainScene\Script\Character\CameraFollow.cs" />
     <Compile Include="Assets\MainScene\Script\Character\CharacterControl.cs" />
     <Compile Include="Assets\MainScene\Script\Character\CharacterLook.cs" />
     <Compile Include="Assets\MainScene\Script\Enemy\EnemyControl.cs" />
