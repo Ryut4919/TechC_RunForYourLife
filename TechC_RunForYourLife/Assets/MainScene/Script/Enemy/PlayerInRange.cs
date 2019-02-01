@@ -21,6 +21,7 @@ public class PlayerInRange : MonoBehaviour {
             if (other.tag == "Player")
             {
                 parent._enemyStatus = EnemyControl.EnemyStatus.GoCaughtPlayer;
+                other.GetComponent<CharacterControl>().Deteched = true;
             }
         }
         if (CaughtUse)

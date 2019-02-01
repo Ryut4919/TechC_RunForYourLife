@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: 59cf2ac5143799f4ebf51d5c8d004da8
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: ahoge_1
+    100002: ahoge_1 1
+    100004: ahoge_2
+    100006: ahoge_2 1
+    100008: ahoge_3
+    100010: ahoge_3 1
+    100012: ahoge_4
+    100014: ahoge_root
+    100016: all_rig
+    100018: B_skirt_1
+    100020: B_skirt_2
+    100022: Back_skirt_dwon
+    100024: Back_skirt_up
+    100026: body_g
+    100028: born_root
+    100030: Chest
+    100032: eyeL
+    100034: eyeR
+    100036: F_skirt_1
+    100038: F_skirt_2
+    100040: face_g
+    100042: Front_skirt
+    100044: Front_skirt_dwon
+    100046: hair_g
+    100048: Head
+    100050: head
+    100052: head_fone_g
+    100054: hip
+    100056: hip2
+    100058: ik_g
+    100060: kazari_g
+    100062: L_Ankle
+    100064: L_Arm
+    100066: L_foot
+    100068: L_foot_loca
+    100070: L_Forearm
+    100072: L_hand
+    100074: L_hand1
+    100076: L_hand2
+    100078: L_hand_ik
+    100080: L_hund_pole
+    100082: L_Knee
+    100084: L_leg_ik
+    100086: L_pole
+    100088: L_ribon_d_root
+    100090: L_ribon_dwon1
+    100092: L_ribon_dwonin
+    100094: L_ribon_dwonout
+    100096: L_ribon_u_root
+    100098: L_ribon_up1
+    100100: L_ribon_upin
+    100102: L_ribon_upout
+    100104: L_Shoulder
+    100106: L_shoulder
+    100108: L_side_skirt_dwon
+    100110: L_side_skirt_up
+    100112: L_skirt_1
+    100114: L_skirt_2
+    100116: L_sum1
+    100118: L_sum2
+    100120: L_Thigh
+    100122: L_Wrist
+    100124: lighteyL
+    100126: lighteyR
+    100128: locator1
+    100130: locator1 1
+    100132: locator2
+    100134: locator3
+    100136: locator4
+    100138: locator5
+    100140: locator6
+    100142: locator6 1
+    100144: locator6 2
+    100146: locator6 3
+    100148: locator6 4
+    100150: locator6 5
+    100152: locator7
+    100154: locator7 1
+    100156: locator8
+    100158: locator8 1
+    100160: locator8 2
+    100162: locator8 3
+    100164: locator9
+    100166: locator9 1
+    100168: locator9 2
+    100170: locator9 3
+    100172: //RootNode
+    100174: pahoge
+    100176: pbody
+    100178: peri
+    100180: peyebrows
+    100182: peyeline1
+    100184: peyeline2
+    100186: pface
+    100188: phair_1
+    100190: phair_2
+    100192: phair_3
+    100194: phair_back
+    100196: phair_pin_1
+    100198: phair_pin_2
+    100200: phair_side_1
+    100202: phair_side_2
+    100204: phand_L
+    100206: phand_R
+    100208: phead_pfoneL
+    100210: phead_phone_1
+    100212: phead_phone_2
+    100214: phead_phoneR
+    100216: phuriru1
+    100218: phuriru2
+    100220: phuriru3
+    100222: phuriru4
+    100224: phuriru5
+    100226: pkazari_1
+    100228: pkazari_2
+    100230: pkazari_3
+    100232: pkazari_4
+    100234: pkazari_5
+    100236: pkazari_6
+    100238: pkazari_7
+    100240: pkazari_8
+    100242: pnekutai
+    100244: pribon_1
+    100246: pribon_2
+    100248: pribon_3
+    100250: pribon_4
+    100252: pshushu_L
+    100254: pshushu_R
+    100256: pskirt_1
+    100258: pskirt_2
+    100260: pskirt_3
+    100262: R_Ankle
+    100264: R_Arm
+    100266: R_foot
+    100268: R_foot_loca
+    100270: R_Forearm
+    100272: R_hand
+    100274: R_hand1
+    100276: R_hand2
+    100278: R_hand_ik
+    100280: R_hund_pole
+    100282: R_Knee
+    100284: R_leg_ik
+    100286: R_pole
+    100288: R_ribon_d_root
+    100290: R_ribon_dwon1
+    100292: R_ribon_dwonin
+    100294: R_ribon_dwonout
+    100296: R_ribon_u_root
+    100298: R_ribon_up1
+    100300: R_ribon_upin
+    100302: R_ribon_upout
+    100304: R_Shoulder
+    100306: R_shoulder
+    100308: R_side_skirt_dwon
+    100310: R_side_skirt_up1
+    100312: R_skirt_1
+    100314: R_skirt_2
+    100316: R_sum1
+    100318: R_sum2
+    100320: R_Thigh
+    100322: R_Wrist
+    100324: ribon_g
+    100326: ribon_root
+    100328: ribon_root 1
+    100330: rig_g
+    100332: rig_ik_g
+    100334: rig_upperbody_up
+    100336: Root
+    100338: skirt_g
+    100340: spine
+    100342: UpperBody
+    400000: ahoge_1
+    400002: ahoge_1 1
+    400004: ahoge_2
+    400006: ahoge_2 1
+    400008: ahoge_3
+    400010: ahoge_3 1
+    400012: ahoge_4
+    400014: ahoge_root
+    400016: all_rig
+    400018: B_skirt_1
+    400020: B_skirt_2
+    400022: Back_skirt_dwon
+    400024: Back_skirt_up
+    400026: body_g
+    400028: born_root
+    400030: Chest
+    400032: eyeL
+    400034: eyeR
+    400036: F_skirt_1
+    400038: F_skirt_2
+    400040: face_g
+    400042: Front_skirt
+    400044: Front_skirt_dwon
+    400046: hair_g
+    400048: Head
+    400050: head
+    400052: head_fone_g
+    400054: hip
+    400056: hip2
+    400058: ik_g
+    400060: kazari_g
+    400062: L_Ankle
+    400064: L_Arm
+    400066: L_foot
+    400068: L_foot_loca
+    400070: L_Forearm
+    400072: L_hand
+    400074: L_hand1
+    400076: L_hand2
+    400078: L_hand_ik
+    400080: L_hund_pole
+    400082: L_Knee
+    400084: L_leg_ik
+    400086: L_pole
+    400088: L_ribon_d_root
+    400090: L_ribon_dwon1
+    400092: L_ribon_dwonin
+    400094: L_ribon_dwonout
+    400096: L_ribon_u_root
+    400098: L_ribon_up1
+    400100: L_ribon_upin
+    400102: L_ribon_upout
+    400104: L_Shoulder
+    400106: L_shoulder
+    400108: L_side_skirt_dwon
+    400110: L_side_skirt_up
+    400112: L_skirt_1
+    400114: L_skirt_2
+    400116: L_sum1
+    400118: L_sum2
+    400120: L_Thigh
+    400122: L_Wrist
+    400124: lighteyL
+    400126: lighteyR
+    400128: locator1
+    400130: locator1 1
+    400132: locator2
+    400134: locator3
+    400136: locator4
+    400138: locator5
+    400140: locator6
+    400142: locator6 1
+    400144: locator6 2
+    400146: locator6 3
+    400148: locator6 4
+    400150: locator6 5
+    400152: locator7
+    400154: locator7 1
+    400156: locator8
+    400158: locator8 1
+    400160: locator8 2
+    400162: locator8 3
+    400164: locator9
+    400166: locator9 1
+    400168: locator9 2
+    400170: locator9 3
+    400172: //RootNode
+    400174: pahoge
+    400176: pbody
+    400178: peri
+    400180: peyebrows
+    400182: peyeline1
+    400184: peyeline2
+    400186: pface
+    400188: phair_1
+    400190: phair_2
+    400192: phair_3
+    400194: phair_back
+    400196: phair_pin_1
+    400198: phair_pin_2
+    400200: phair_side_1
+    400202: phair_side_2
+    400204: phand_L
+    400206: phand_R
+    400208: phead_pfoneL
+    400210: phead_phone_1
+    400212: phead_phone_2
+    400214: phead_phoneR
+    400216: phuriru1
+    400218: phuriru2
+    400220: phuriru3
+    400222: phuriru4
+    400224: phuriru5
+    400226: pkazari_1
+    400228: pkazari_2
+    400230: pkazari_3
+    400232: pkazari_4
+    400234: pkazari_5
+    400236: pkazari_6
+    400238: pkazari_7
+    400240: pkazari_8
+    400242: pnekutai
+    400244: pribon_1
+    400246: pribon_2
+    400248: pribon_3
+    400250: pribon_4
+    400252: pshushu_L
+    400254: pshushu_R
+    400256: pskirt_1
+    400258: pskirt_2
+    400260: pskirt_3
+    400262: R_Ankle
+    400264: R_Arm
+    400266: R_foot
+    400268: R_foot_loca
+    400270: R_Forearm
+    400272: R_hand
+    400274: R_hand1
+    400276: R_hand2
+    400278: R_hand_ik
+    400280: R_hund_pole
+    400282: R_Knee
+    400284: R_leg_ik
+    400286: R_pole
+    400288: R_ribon_d_root
+    400290: R_ribon_dwon1
+    400292: R_ribon_dwonin
+    400294: R_ribon_dwonout
+    400296: R_ribon_u_root
+    400298: R_ribon_up1
+    400300: R_ribon_upin
+    400302: R_ribon_upout
+    400304: R_Shoulder
+    400306: R_shoulder
+    400308: R_side_skirt_dwon
+    400310: R_side_skirt_up1
+    400312: R_skirt_1
+    400314: R_skirt_2
+    400316: R_sum1
+    400318: R_sum2
+    400320: R_Thigh
+    400322: R_Wrist
+    400324: ribon_g
+    400326: ribon_root
+    400328: ribon_root 1
+    400330: rig_g
+    400332: rig_ik_g
+    400334: rig_upperbody_up
+    400336: Root
+    400338: skirt_g
+    400340: spine
+    400342: UpperBody
+    2100000: Techsichan_col_mat
+    4300000: peri
+    4300002: pnekutai
+    4300004: phand_L
+    4300006: phand_R
+    4300008: pbody
+    4300010: pshushu_L
+    4300012: pshushu_R
+    4300014: pribon_1
+    4300016: pribon_2
+    4300018: pribon_3
+    4300020: pribon_4
+    4300022: peyebrows
+    4300024: eyeR
+    4300026: lighteyR
+    4300028: lighteyL
+    4300030: eyeL
+    4300032: peyeline2
+    4300034: peyeline1
+    4300036: phead_phone_1
+    4300038: phead_phone_2
+    4300040: phead_pfoneL
+    4300042: phead_phoneR
+    4300044: phair_pin_2
+    4300046: phair_pin_1
+    4300048: pahoge
+    4300050: phair_side_1
+    4300052: phair_side_2
+    4300054: phair_1
+    4300056: phair_2
+    4300058: phair_3
+    4300060: phair_back
+    4300062: pface
+    4300064: pskirt_1
+    4300066: pskirt_2
+    4300068: pskirt_3
+    4300070: phuriru1
+    4300072: phuriru2
+    4300074: phuriru3
+    4300076: phuriru4
+    4300078: phuriru5
+    4300080: pkazari_1
+    4300082: pkazari_2
+    4300084: pkazari_3
+    4300086: pkazari_4
+    4300088: pkazari_5
+    4300090: pkazari_6
+    4300092: pkazari_7
+    4300094: pkazari_8
+    9500000: //RootNode
+    13700000: eyeL
+    13700002: eyeR
+    13700004: lighteyL
+    13700006: lighteyR
+    13700008: pahoge
+    13700010: pbody
+    13700012: peri
+    13700014: peyebrows
+    13700016: peyeline1
+    13700018: peyeline2
+    13700020: pface
+    13700022: phair_1
+    13700024: phair_2
+    13700026: phair_3
+    13700028: phair_back
+    13700030: phair_pin_1
+    13700032: phair_pin_2
+    13700034: phair_side_1
+    13700036: phair_side_2
+    13700038: phand_L
+    13700040: phand_R
+    13700042: phead_pfoneL
+    13700044: phead_phone_1
+    13700046: phead_phone_2
+    13700048: phead_phoneR
+    13700050: phuriru1
+    13700052: phuriru2
+    13700054: phuriru3
+    13700056: phuriru4
+    13700058: phuriru5
+    13700060: pkazari_1
+    13700062: pkazari_2
+    13700064: pkazari_3
+    13700066: pkazari_4
+    13700068: pkazari_5
+    13700070: pkazari_6
+    13700072: pkazari_7
+    13700074: pkazari_8
+    13700076: pnekutai
+    13700078: pribon_1
+    13700080: pribon_2
+    13700082: pribon_3
+    13700084: pribon_4
+    13700086: pshushu_L
+    13700088: pshushu_R
+    13700090: pskirt_1
+    13700092: pskirt_2
+    13700094: pskirt_3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Techsichan_col_mat
+    second: {fileID: 2100000, guid: cf5e2e27050f43d4da6c987fc77c2f79, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 2
+    tangentImportMode: 2
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechC_RunForYourLife", "TechC_RunForYourLife.csproj", "{DBF63550-DAE0-B1F9-68D3-543B796D7549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechC_RunForYourLife.Plugins", "TechC_RunForYourLife.Plugins.csproj", "{CD537C79-5EDD-B0A6-8CAA-6A3C16E39F06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechC_RunForYourLife.Editor", "TechC_RunForYourLife.Editor.csproj", "{EBA77AB1-4EA3-B79C-7715-C35C1471B7EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,14 @@ Global
 		{DBF63550-DAE0-B1F9-68D3-543B796D7549}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBF63550-DAE0-B1F9-68D3-543B796D7549}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBF63550-DAE0-B1F9-68D3-543B796D7549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD537C79-5EDD-B0A6-8CAA-6A3C16E39F06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD537C79-5EDD-B0A6-8CAA-6A3C16E39F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD537C79-5EDD-B0A6-8CAA-6A3C16E39F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD537C79-5EDD-B0A6-8CAA-6A3C16E39F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA77AB1-4EA3-B79C-7715-C35C1471B7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA77AB1-4EA3-B79C-7715-C35C1471B7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA77AB1-4EA3-B79C-7715-C35C1471B7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA77AB1-4EA3-B79C-7715-C35C1471B7EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

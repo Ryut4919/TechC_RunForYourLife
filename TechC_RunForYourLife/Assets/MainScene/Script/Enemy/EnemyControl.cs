@@ -20,6 +20,8 @@ public class EnemyControl : MonoBehaviour {
     [SerializeField]
     GameObject CaughtPlayerUse;
 
+    public float FindSpeed; 
+
     //プレーヤーを取得
     GameObject Player;
     
@@ -72,6 +74,7 @@ public class EnemyControl : MonoBehaviour {
                 break;
             case EnemyStatus.GoCaughtPlayer://プレーヤーを追い
                 Find();
+                
                 break;
             case EnemyStatus.GoBack://最初の場所へ戻す
                 GoBack();
@@ -118,8 +121,8 @@ public class EnemyControl : MonoBehaviour {
     private void WalkTo()
     {
         //移動スピード
-        agent.speed = 2.5f;
-        _animator.SetBool("Run", true);
+        agent.speed = 3f;
+        //_animator.SetBool("Run", true);
         if (ReachWalk1)
         {
             if (transform.position.x==WalkTo1.position.x)
@@ -141,19 +144,19 @@ public class EnemyControl : MonoBehaviour {
     {
         WalkController = !WalkController;
         agent.speed = 1f;
-        _animator.SetBool("Run", false);
+        //_animator.SetBool("Run", false);
         new WaitForSeconds(60.0f);
         _enemyStatus = EnemyStatus.Walk;
     }
 
     private void Find()
     {
-
+        
         CaughtPlayer = true;
-        agent.speed = 4.5f;
+        agent.speed = FindSpeed;
         //移動先をプレーヤーのところに変更
         agent.destination = Player.transform.position;
-        _animator.SetBool("Run", true);
+       // _animator.SetBool("Run", true);
     }
 
     private void GoBack()
@@ -161,7 +164,7 @@ public class EnemyControl : MonoBehaviour {
         agent.speed = 3.5f;
         //移動先を最初の場所へ変更
         agent.destination = StartPos;
-        _animator.SetBool("Run", true);
+        //_animator.SetBool("Run", true);
         CaughtPlayer = false;
 
         if (transform.position.x == StartPos.x)

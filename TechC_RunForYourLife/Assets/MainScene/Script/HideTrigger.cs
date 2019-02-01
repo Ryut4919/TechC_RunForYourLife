@@ -21,6 +21,7 @@ public class HideTrigger : MonoBehaviour {
         if (other.tag == "Player")
         {
             _enemyControl._enemyStatus = EnemyControl.EnemyStatus.GoCaughtPlayer;
+            other.GetComponent<CharacterControl>().Deteched = true;
         }
         
     }
